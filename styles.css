@@ -1,0 +1,45 @@
+/* Reset some default styles */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Define styles for the sections */
+.section {
+    width: 100%; /* Full width by default */
+    background-color: #fff; /* Background color */
+    border: 1px solid #000; /* Black border */
+    margin: 20px 0; /* Vertical spacing between sections */
+    padding: 20px; /* Spacing between content and section edges */
+    position: relative; /* Relative positioning for title region */
+}
+
+/* Define styles for section titles */
+.section h2 {
+    position: absolute; /* Absolute positioning for title */
+    top: 10px; /* Offset from top edge */
+    right: 10px; /* Offset from right edge */
+    background-color: #333; /* Background color for title region */
+    color: #fff; /* Text color for title */
+    padding: 5px 10px; /* Spacing within title region */
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 50%; /* Two sections side by side */
+        float: left; /* Float sections to the left */
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 100%; /* Each section takes full width in mobile view */
+        margin: 10px 0; /* Adjust vertical spacing for mobile */
+    }
+}
